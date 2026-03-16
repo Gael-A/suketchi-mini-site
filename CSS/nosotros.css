@@ -1,0 +1,42 @@
+.about-hero {
+    max-width: 900px;
+    text-align: center;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-hero h1 {
+    font-size: 36px;
+    color: var(--purple-600);
+}
+
+.about-hero p {
+    opacity: 0.7;
+    line-height: 1.6;
+}
+
+.about-grid {
+    margin-top: 60px;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.about-card {
+    background: var(--purple-800);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.about-card h2 {
+    margin-bottom: 10px;
+    color: var(--purple-accent);
+}
+
+.about-card p {
+    opacity: 0.8;
+}
