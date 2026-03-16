@@ -1,0 +1,114 @@
+/* HERO */
+
+.hero {
+
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 40px;
+
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+}
+
+.hero img {
+
+    width: 280px;
+    border-radius: 12px;
+
+}
+
+.hero-info {
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.hero-info h1 {
+
+    font-size: 36px;
+
+}
+
+.hero-info p {
+
+    opacity: 0.7;
+    max-width: 500px;
+
+}
+
+.hero-button {
+
+    width: fit-content;
+    padding: 10px 18px;
+
+    background: var(--purple-600);
+    color: white;
+
+    border-radius: 8px;
+    text-decoration: none;
+
+}
+
+
+/* CAPITULOS */
+
+.chapter-section {
+
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 60px;
+
+}
+
+.chapter-title {
+
+    font-size: 22px;
+    margin-bottom: 20px;
+
+}
+
+
+/* GRID */
+
+.chapter-grid {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+    gap: 20px;
+
+}
+
+.chapter-card {
+
+    text-decoration: none;
+    color: inherit;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.chapter-card img {
+
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.chapter-card h3 {
+
+    font-size: 16px;
+
+}
+
+.chapter-card span {
+
+    font-size: 14px;
+    opacity: 0.6;
+
+}

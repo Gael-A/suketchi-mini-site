@@ -1,0 +1,175 @@
+.navbar{
+
+    width:100%;
+    min-height:70px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:var(--navbar-bg);
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid var(--navbar-border);
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+}
+
+.navbar-container{
+
+    width:100%;
+    max-width:1200px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 24px;
+
+}
+
+.navbar-logo{
+
+    font-size:20px;
+    font-weight:600;
+    letter-spacing:1px;
+
+    color:var(--text-light);
+    text-decoration:none;
+}
+
+.navbar-logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-logo > * {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navbar-menu{
+
+    display:flex;
+    gap:28px;
+
+}
+
+.navbar-link{
+
+    color:var(--text-soft);
+    text-decoration:none;
+    font-size:15px;
+
+    position:relative;
+    transition:0.25s;
+
+}
+
+.navbar-link:hover{
+
+    color:var(--purple-accent);
+
+}
+
+.navbar-link::after{
+
+    content:"";
+    position:absolute;
+
+    left:0;
+    bottom:-6px;
+
+    width:0%;
+    height:2px;
+
+    background:var(--purple-accent);
+
+    transition:0.25s;
+
+}
+
+.navbar-link:hover::after{
+
+    width:100%;
+
+}
+
+
+/* active page */
+
+.navbar-link.active{
+
+    color:var(--purple-accent);
+
+}
+
+.navbar-link.active::after{
+
+    width:100%;
+
+}
+
+
+/* mobile */
+
+.navbar-toggle{
+
+    display:none;
+    flex-direction:column;
+    gap:5px;
+    cursor:pointer;
+
+}
+
+.navbar-toggle span{
+
+    width:24px;
+    height:2px;
+    background:white;
+
+}
+
+/* responsive */
+
+@media(max-width:768px){
+
+    .navbar-menu{
+
+        position:absolute;
+
+        top:70px;
+        left:0;
+
+        width:100%;
+
+        flex-direction:column;
+        align-items:center;
+
+        background:var(--purple-900);
+
+        max-height:0;
+        overflow:hidden;
+
+        transition:0.3s;
+
+    }
+
+    .navbar-menu.open{
+
+        max-height:300px;
+        padding:20px 0;
+
+    }
+
+    .navbar-toggle{
+
+        display:flex;
+
+    }
+
+}

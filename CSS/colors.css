@@ -1,0 +1,26 @@
+:root{
+
+    /* Colores principales */
+    --purple-900:#1a0f2e;
+    --purple-800:#26164a;
+    --purple-700:#3b1e6d;
+    --purple-600:#5b2ca3;
+
+    /* Acentos */
+    --purple-accent:#8b5cf6;
+    --purple-accent-soft:#c4b5fd;
+
+    /* Neutrales */
+    --white:#ffffff;
+    --gray-100:#f5f5f7;
+    --gray-300:#d1d1d6;
+    --gray-700:#3a3a3c;
+
+    /* UI */
+    --navbar-bg:rgba(26,15,46,0.95);
+    --navbar-border:rgba(255,255,255,0.08);
+
+    --text-light:#ffffff;
+    --text-soft:#d1cfe6;
+
+}
