@@ -1,0 +1,51 @@
+.contact-hero{
+text-align:center;
+margin-top:60px;
+max-width:900px;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact-hero h1{
+font-size:36px;
+color:var(--purple-600);
+}
+
+.contact-form{
+margin-top:40px;
+width:100%;
+max-width:500px;
+}
+
+.contact-form form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+border-radius:8px;
+border:1px solid var(--gray-300);
+font-size:14px;
+}
+
+.contact-form textarea{
+min-height:120px;
+resize:none;
+}
+
+.contact-form button{
+padding:12px;
+background:var(--purple-600);
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+.contact-form button:hover{
+background:var(--purple-700);
+}
